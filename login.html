@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | E‑Library</title>
+  <style>
+   body {
+    margin: 0;
+    padding: 0;
+    background: #f3f1ff;
+    color: #2d2d2d;
+    font-family: 'Poppins',sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( to right , #f4caae,rgb(244, 230, 208));
+}
+.login-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.login-card{
+  background:#fdfdfd;
+  padding: 40px;
+  border-radius: 25px;
+  width: 330px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+  animation: pop 1.4s;
+}
+@keyframes pop{
+  0%{transform: scale(.7);opacity: 0;}
+  100%{transform: scale(1);opacity: 1;}
+}
+ 
+.h1{
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: black;
+}
+.input{
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.btn{
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+   background: #e78747;
+   color: white;
+  font-size: 1rem;
+  cursor:pointer;
+  margin: 15px 0;
+  transition:0.3s;
+}
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.back-home {
+    
+    padding: 15px 28px;
+    background:#9a9999 ;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.back-home:hover{
+    border-color: #010004;
+      transform: scale(1.05);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.3);}
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <h1 class="h1">Login</h1>
+      <input type="email" placeholder="Email" class="input">
+      <input type="password" placeholder="Password" class="input">
+      <button class="btn">Login</button>
+      <p>Don't have an account? <a href="register.html">Register</a></p>
+    <a href="index.html"><button  class="back-home">Back Home</button></a>
+   
+    </div>
+  </div>
